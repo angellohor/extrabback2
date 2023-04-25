@@ -1,3 +1,4 @@
+//Ángel López Hortelano
 package paqG07;
 import paqG07.*;
 
