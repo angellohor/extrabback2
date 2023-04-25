@@ -135,5 +135,11 @@ public class contenedor implements Serializable {
 
     }
 
+    public String getaduanas(){
+        if (this.aduanas){
+            return "true";
+        }else return "false";
+    }
+
 }
 //

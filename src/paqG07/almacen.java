@@ -149,5 +149,20 @@ public class almacen implements Serializable {
         return j;
     }
 
+    public String aduanasporpeso(double peso){
+        String contendores = "contenedores chequeados en aduana:\n" + "Id contenedor \t\t Peso \t\t EmpresaRemitente \tAduanas\n";
+        for(int i=0;i<10;i++){
+            for(int a=0; a<12;a++){
+                if((p1[i][a].getPeso())>=peso){
+                    p1[i][a].setAduanas(true);
+                    contendores = contendores + p1[i][a].getNumero_identificación() + "\t\t" +p1[i][a].getPeso() +"\t\t" +p1[i][a].getEmpresa_remitente()+ "\t\t" + p1[i][a].getaduanas() + "\n";
+
+                }
+            }
+
+        }
+        return contendores;
+    }
+
 
 }

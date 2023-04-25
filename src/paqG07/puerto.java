@@ -44,5 +44,7 @@ public class puerto implements Serializable {
         return a[0].cuantosa(pais)+a[1].cuantosa(pais)+a[2].cuantosa(pais);
     }
 
-
+    public String aduanas(int hub, double peso){
+        return a[hub].aduanasporpeso(peso);
+    }
 }
